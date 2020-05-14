@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <div class="wrapper">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+   <% if (locals.err) { %>
+   <div class='box'>
+    <ul >
+        <% err.forEach(function(key){ %>
+              <li class='error'><%= key.msg %></li>
+        <% }); %>
+    </ul>
+    </div>
+    <% } else if(locals.data) { %>
+    <div class='box1'>
+        <ul class='success'>
+        
+           
+              <li ><%= data %> successfully logged in</li>
+        
+        
+    </ul>
+    </div>
+    <% } %>
+  </div>
+</div>
+  </body>
+</html>

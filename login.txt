@@ -1,0 +1,4 @@
+database name: login
+
+email:example@gmail.com
+pass:1234
